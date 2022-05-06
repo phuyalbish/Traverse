@@ -1,0 +1,75 @@
+
+
+#maincontent{
+    top:5vh;
+    background-color:#fff;
+}
+a #nav3{
+  background-color:rgba(26, 25, 25, 0.747);
+  color:#fff;
+}
+
+.column {
+    float: left;
+    width:33.33%;
+  }
+  @media screen and (max-width: 900px) {
+    .column {
+      width:50%;
+    }
+}
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  .columninside:hover{
+    background-color:#f1a9a969;
+    box-shadow:none;
+
+  }
+  .columninside{
+    box-shadow:10px 10px 10px rgba(123, 196, 230, 0.534);
+      background-color:#b2b6bd2d;
+      width:100%;
+      margin:0%;
+      position:relative;
+  }
+.columninside ul{
+    text-align:left;
+    width:80%;
+    list-style-type:none;
+}
+.columninside ul h2{
+  margin:0px;
+  padding-top:10px;
+    text-align:center;
+    background-color:#5d78af96;
+    color:#fff;
+    width:100%;
+    height:50px;
+
+}
+
+.columninside ul button{
+    background-color:rgba(255, 0, 0, 0.877);
+    width:100%;
+    height:50px;
+    color:#fff;
+    font-size:20px;
+    border:none;
+    text-align:center;
+}
+.columninside ul button a{
+  color:#fff;
+  text-decoration:none;
+}
+.columninside ul li{
+    padding:10px 10px;
+    color:rgb(2, 0, 0);
+    font-size:22px;
+    font-weight:bold;
+    border:none;
+}
+.lists:nth-child(even) {background: rgba(183, 198, 211, 0.493)}
+.lists:nth-child(odd) {background: rgba(255, 255, 255, 0)}

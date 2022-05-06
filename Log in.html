@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="internals/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Log in | Traverse.com</title>
+    <link rel = "icon" type = "image/png" href = "images/logo.png">
+	<style>
+		
+	
+#maincontent{
+    background-color:#fff;
+    top:5vh;
+	font-size:20px;
+}
+fieldset{
+  margin-top:40px;
+  padding:0px;
+  width:99%;
+  background-color:rgba(186, 219, 241, 0.815);
+  margin-top:30px;
+  border:none;
+  text-align:center;
+}
+legend{
+  padding:10px 0px;
+  font-size:25px;
+  text-align:center;
+  color:rgba(0, 0, 0, 0.993);
+}
+
+#form1,#form2{
+  padding:40px 0px;
+  border-radius:10px;
+  width:50%;
+  margin:auto;
+}
+
+#form1 .input, #form2 .input{
+  margin:10px;
+  height:40px;
+  text-align:center;
+  font-size:20px;
+  width:70%;
+  border:none;
+}
+#phno{
+  height:40px;
+  text-align:center;
+  font-size:20px;
+  width:60%;
+  border:none;
+}
+#select{
+  margin:5px;
+  height:40px;
+  text-align:center;
+  font-size:20px;
+  width:9%;
+  border:none;
+}
+.submit{
+  width:34%;
+  height:40px;
+  background-color:rgba(28, 29, 29, 0.815);
+  color:#fff;
+  font-size:20px;
+  border:none;
+}
+
+	</style>
+</head>
+<body> 
+    <div id="heading">
+        <div id="Company">
+            <h1 class="company_name">Traverse.com</h1>
+        </div>
+        <ul id="nav">
+			<a href="Log in.html"><li class="nav_links" id="nav2" style="background-color:rgba(26, 25, 25, 0.747);color:#fff;">Log in</li></a>
+            <a href="index.html"><img src="images/home-solid.svg" alt="nopic" id="nav_home" class="nav_icon"/></a>
+            <a href="about_us.html"><li class="nav_links" id="nav4">About Us</li></a>
+            <a href="services.html"><li class="nav_links" id="nav1">Services</li></a>
+            <a href="pricing.html"><li class="nav_links" id="nav3">Pricing</li></a>
+        </ul>
+    </div>
+	
+		<div id="maincontent">
+		<div id="content_inside">
+            <fieldset id="formetc">
+                <div id="form1" name="form" >
+                    <legend>Users Login</legend>
+                    <input name="Name" class="input" id="name" placeholder="Your Name"  required/><br>
+                    <input type="password" class="input"  name="password" id="password" placeholder="Your password" required/><br>
+                    <input type="submit" class="submit" onclick="loginsubmit()" value="LogIn"/>
+                    <input type="submit"  class="submit" onclick="signupsubmit()" value="SignUp"/>
+                   
+                </div>
+                            
+                <div  id="form2" style="display:none;" target="_self">
+                    <legend>Users Signup</legend>
+                    <input name="Name" class="input" id="fname" placeholder="Enter your name"  autocomplete="off" required/><br>
+                    <input type="number" class="input" id="age" placeholder="Your Age" autocomplete="off" /><br>
+                    <select id="select">
+                        <option value="977">977</option>
+                        <option value="01">01</option>
+                        <option value="91">91</option>
+                        <option value="45">45</option>
+                        <option value="20">20</option>
+                        <option value="33">33</option>
+                    </select><input id="phno" type="number" placeholder="Ph-Number" id="ph" min="0"/>
+                    <input type="password" class="input" name="Spassword" id="spassword"  placeholder="Password" required/><br>
+                    <input type="password" class="input" name="repassword" id="repassword" placeholder="Re-type password" required/><br>
+                    <input type="submit" class="submit" onclick="loginagainsubmit()" value="LogIn"/>
+                    <input type="submit" class="submit" onclick="signupagainsubmit()" value="SignUp"/>
+                </div>
+                <p id="demo" style="font-size:22px;"></p>
+            </fieldset>
+	
+	
+	</div>
+	</div>
+	
+            <!--Footer-->
+            <div class="cookiefooter" id="display" style="display:none;">
+                <p>We use cookies to provide you with the best possible experience in your interactions with  Traverse. You agree to our use of cookies on your device by continuing to use our website or by clicking <button class="cookiebutton" onclick="ok()">I agree.</button></p>
+                
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footercontent">
+                <h3 id="footer_h3"></h3>
+                <p id="footer_p">
+                    <p>Copyright &copy; 2020 Traverse Nepal,Inc. All rights reserved.</p>
+                <a href="../info.html#privacy">Privacy Policies</a> | <span onclick="show()">Cookies Info</span> | <a href="../info.html">Terms of services</a> | <a href="../info.html#any">Any Qureies.</a>
+                </p>
+                <p>Thanks for the roll up and Get Connected with us on:</p>
+                <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-brands.svg" alt="nopic" /></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="images/instagram-brands.svg" alt="nopic" /></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="images/twitter-square-brands.svg" alt="nopic" /></a>
+                <a href="https://www.paypal.com" target="_blank"><img src="images/paypal-brands.svg" alt="nopic" /></a>
+            </div>
+        </div>
+</body>
+<script src="internals/mainhome.js"></script>
+<script src="../internals/main.js"></script>
+</html>

@@ -1,0 +1,73 @@
+
+#maincontent{
+    top:5vh;
+    background-color:#fff;
+}
+
+
+fieldset{
+    margin-top:40px;
+    padding:0px;
+    width:99%;
+    background-color:rgba(110, 119, 124, 0.815);
+    margin-top:30px;
+    border:none;
+    text-align:center;
+  }
+  legend{
+    padding:10px 0px;
+    font-size:25px;
+    text-align:center;
+    color:rgba(0, 0, 0, 0.993);
+  }
+  
+  #form{
+      background-color:rgb(135, 193, 240);
+    padding:40px 0px;
+    border-radius:10px;
+    width:70%;
+    margin:auto;
+  }
+  
+  #form .input{
+
+    margin:10px;
+    height:40px;
+    text-align:center;
+    font-size:20px;
+    width:90%;
+    border:none;
+  }
+  #phno{
+    height:40px;
+    text-align:center;
+    font-size:20px;
+    width:80%;
+    border:none;
+  }
+  #selecthotel{
+    margin:5px;
+    height:40px;
+    text-align:center;
+    font-size:20px;
+    width:90%;
+    border:none;
+
+  }
+  #select{
+    margin:5px;
+    height:40px;
+    text-align:center;
+    font-size:20px;
+    width:9%;
+    border:none;
+  }
+  .submit{
+    width:44%;
+    height:40px;
+    background-color:rgba(28, 29, 29, 0.815);
+    color:#fff;
+    font-size:20px;
+    border:none;
+  }
+  

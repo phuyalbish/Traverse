@@ -1,0 +1,364 @@
+<!--By NCCSBIM 1st sem group "g"-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="internals/main.css">
+    <link rel="stylesheet" href="internals/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home | Traverse.com</title>
+    <link rel = "icon" type = "image/png" href = "images/logo.png">
+</head>
+<body onload="abc()" style="background-color:rgb(0, 0, 0);"> 
+    
+    <div id="heading">
+        <div id="Company">
+            <h1 class="company_name">Traverse.com</h1>
+        </div>
+        <ul id="nav">
+			<a href="Log in.html"><li class="nav_links" id="nav2">Log in</li></a>
+            <a href="index.html"><img src="images/home-solid.svg" alt="nopic" id="nav_home" class="nav_icon"/></a>
+            <a href="about_us.html"><li class="nav_links" id="nav4">About Us</li></a>
+            <a href="services.html"><li class="nav_links" id="nav1">Services</li></a>
+            <a href="pricing.html"><li class="nav_links" id="nav3">Pricing</li></a>
+        </ul>
+    </div>
+
+            <div id="background_image">
+                    <video autoplay muted loop src="images/backgroundvideo.mp4"></video>
+				<div id="background_content">
+                <p>We Make Travel More Exciting.</p><br/>
+                <div id="background_form" onmouseover="blur_background()" onmouseout="blur_reverse()">               
+                 <input type="text" list="placess" name="placess" id="home_text" maxlength="30" placeholder="Explore the Places!" />
+                 <datalist id = "placess">
+                    <option value = "kathmandu">kathmandu</option>
+                    <option value = "bhaktapur">bhaktapur</option>
+                    <option value = "pokhara">pokhara</option>
+                    <option value = "chitwan">chitwan</option>
+                    <option value =  "mustang">mustang</option>
+                    <option value = "lalitpur">lalitpur</option>
+                    <option value = "lumbini">lumbini</option>
+                    <option value = "namchebazar">namchebazar</option>
+                    <option value = "kalinchwok">kalinchwok</option>
+                  </datalist>
+				<a href="places/kathmandu.html"><button id="home_search" onclick="homesearch()"><i class="fa fa-fw fa-search"></i> </button></a> 
+                </div>
+                </div>
+                </div>
+                
+            
+            <!--Main Content-->
+            <div id="maincontent">
+                <div id="content_inside">
+                       <h2  style="color:rgba(0, 0, 0, 0.801);text-align:center;font-family:courier;font-size:30px;font-style:italic;courier" >Select Your Destination</h2>
+                    <!--12 column started-->
+                    
+                    <div class="column">
+                        <div class="columninside">
+                            <img src="images/2.jpg" alt="Mountains" style="width:100%">
+                            <div class="content">
+                                <p>Kathmandu</p>
+                            </div>
+                            <div class="columninfo">
+                                <div class="columninfo_inside">
+                                    <p>Kathmandu:</p> 
+                                    <p>Peoples place</p>
+                                    <p>0km far from Kathmandu</p>
+                                    <a href="places/kathmandu.html"> <button class="visitbutton" onclick="visit()">More Info</button></a>                               
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="columninside">
+                            <img src="images/1.jpg" alt="Mountains" style="width:100%">
+                            <div class="content">
+                                <p>Bhaktapur</p>
+                            </div>
+                            <div class="columninfo">
+                                <div class="columninfo_inside">
+                                        <p>Bhaktapur:</p> 
+                                        <p>District of Temples.</p>
+                                        <p>15.4km far from Kathmandu</p>
+                                       <a href="places/bhaktapur.html"> <button class="visitbutton" onclick="visit()">More Info</button></a>
+                                </div>
+                    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="columninside">
+                            <img src="images/13.jpg" alt="Mountains" style="width:100%">
+                            <div class="content">
+                                <p>Lalitpur</p>
+                            </div>
+                            <div class="columninfo">
+                                <div class="columninfo_inside">
+                                        <p>Lalitpur:</p> 
+                                        <p>Rich Cultural Heritage.</p>
+                                        <p>8.2km far from Kathmandu</p>
+                                       <a href="places/lalitpur.html"> <button class="visitbutton" onclick="visit()">More Info</button></a>
+                                </div>
+                    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column" id="scrolldownsearch">
+                        <div class="columninside">
+                            <img src="images/3.jpg" alt="Mountains" style="width:100%">
+                            <div class="content">
+                                <p>Pokhara</p>
+                            </div>
+                            <div class="columninfo">
+                                <div class="columninfo_inside">
+                                    <p>Pokhara:</p> 
+                                        <p>Fishtails and Lake's beauty</p>
+                                        <p>201.1km far from Kathmandu</p>
+                                        <a href="places/pokhara.html"> <button class="visitbutton" onclick="visit()">More Info</button></a>
+    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="columninside">
+                            <img src="images/14.jpg" alt="Mountains" style="width:100%">
+                            <div class="content">
+                                <p>Kalinchwok</p>
+                            </div>
+                            <div class="columninfo">
+                                <div class="columninfo_inside">
+                                    <p>Kalinchwok</p> 
+                                    <p>Snowfall and Mountains</p>
+                                    <p>149.4km far from Kathmandu</p>
+                                    <a href="places/kalinchwok.html"> <button class="visitbutton" onclick="visit()">More Info</button></a>                               
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="columninside">
+                            <img src="images/4.jpg" alt="Mountains" style="width:100%">
+                            <div class="content">
+                                <p>Chitwan</p>
+                            </div>
+                            <div class="columninfo">
+                                <div class="columninfo_inside">
+
+                                    <p>Chitwan:</p> 
+                                    <p>Jungle Safari</p>
+                                    <p>201.1km far from Kathmandu</p>
+                                    <a href="places/chitwan.html"> <button class="visitbutton" onclick="visit()">More Info</button></a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="columninside">
+                            <img src="images/5.jpg" alt="Mountains" style="width:100%">
+                            <div class="content">
+                                <p>Mustang</p>
+                            </div>
+                            <div class="columninfo">
+                                <div class="columninfo_inside">
+                                    <p>Mustang:</p> 
+                                    <p>Country after Mountains</p>
+                                    <p>203 far from kathmandu</p>
+                                    <a href="places/mustang.html"> <button class="visitbutton" onclick="visit()">More Info</button></a>
+                                 </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="columninside">
+                            <img src="images/15.jpeg" alt="Mountains" style="width:100%">
+                            <div class="content">
+                                <p>Dharan</p>
+                            </div>
+                            <div class="columninfo">
+                                <div class="columninfo_inside">
+                                    <p>Dharan:</p> 
+                                    <p>Multiculture and Markets</p>
+                                    <p>380.1km far from Kathmandu</p>
+                                    <a href="places/dharan.html"> <button class="visitbutton" onclick="visit()">More Info</button></a>                               
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="columninside">
+                            <img src="images/6.jpg" alt="Mountains" style="width:100%">
+                            <div class="content">
+                                <p>Swargadwari,Pyuthan</p>
+                            </div>
+                            <div class="columninfo">
+                                <div class="columninfo_inside">
+
+                                    
+                                    <p>Swargadwari:</p> 
+                                    <p>Gateway to Heaven</p>
+                                    <p>416.8km far from Kathmandu</p>
+                                    <a href="places/swargadwari.html"> <button class="visitbutton" onclick="visit()">More Info</button></a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="columninside">
+                            <img src="images/7.jpg" alt="Mountains" style="width:100%">
+                            <div class="content">
+                                <p>NamcheBazar</p>
+                            </div>
+                            <div class="columninfo">
+                                <div class="columninfo_inside">
+
+
+                                    <p>Namchebazar:</p> 
+                                    <p>City in the lap of Everest</p>
+                                    <p>103 km far from Kathmandu</p>
+                                    <a href="places/namchebazar.html"> <button class="visitbutton" onclick="visit()">More Info</button></a>                         </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="columninside">
+                            <img src="images/8.jpg" alt="Mountains" style="width:100%">
+                            <div class="content">
+                                <p>Lumbini</p>
+                            </div>
+                            <div class="columninfo">
+                                <div class="columninfo_inside">
+
+                                    
+                                    <p>Lumbini:</p> 
+                                    <p>Place where Buddha was born</p>
+                                    <p>287.1 km far from Kathmandu</p>
+                                    <a href="places/lumbini.html"> <button class="visitbutton" onclick="visit()">More Info</button></a>                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="columninside">
+                            <img src="images/9.jpg" alt="Mountains" style="width:100%">
+                            <div class="content">
+                                <p>Ghandruk Village</p>
+                            </div>
+                            <div class="columninfo">
+                                <div class="columninfo_inside">
+
+                                    
+                                    <p>Ghandruk Village:</p> 
+                                    <p>Typical Nepali Village</p>
+                                    <p>169 km far from Kathmandu</p>
+                                    <a href="places/ghandruk.html"> <button class="visitbutton" onclick="visit()">More Info</button></a>                              </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="columninside">
+                            <img src="images/10.jpg" alt="Mountains" style="width:100%">
+                            <div class="content">
+                                <p>Annapurna Base Camp</p>
+                            </div>
+                            <div class="columninfo">
+                                <div class="columninfo_inside">
+
+                                    
+                                    <p>ABC:</p> 
+                                    <p>Best for Trekking</p>
+                                    <p>186 km far from Kathmandu</p>
+                                    <a href="places/abc.html"> <button class="visitbutton" onclick="visit()">More Info</button></a>                              </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="columninside">
+                            <img src="images/11.jpg" alt="Mountains" style="width:100%">
+                            <div class="content">
+                                <p>Shri Antu, Illam</p>
+                            </div>
+                            <div class="columninfo">
+                                <div class="columninfo_inside">
+
+                                    
+                                    <p>Shri Antu:</p> 
+                                    <p>First Glimpse of Sunrise.</p>
+                                    <p>496.2 km far from Kathmandu</p>
+                                    <a href="places/shriantu.html"> <button class="visitbutton" onclick="visit()">More Info</button></a>                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column" style="padding-bottom:50px;">
+                        <div class="columninside">
+                            <img src="images/12.jpg" alt="Mountains" style="width:100%">
+                            <div class="content">
+                                <p>Rara lake, Mugu</p>
+                            </div>
+                            <div class="columninfo">
+                                <div class="columninfo_inside">
+
+                                    
+                                    <p>Rara lake:</p> 
+                                    <p>Beauty of Water.(Trek)</p>
+                                    <p>376 km far from Kathmandu</p>
+                                    <a href="places/rara.html"> <button class="visitbutton" onclick="visit()">More Info</button></a>                            
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="saying" style="margin:auto; width:70%;">
+                        <p style="text-align:center; font-size:20px;vertical-align:text-bottom color:#000000">“Travel makes one modest. You see what a tiny place you occupy in the world.”</p><p style="text-align:right; font-size:20px; margin-bottom:15vh; color:#000000">– Gustave Flaubert</p>
+                    </div>
+                    
+                    <div id="poweredby">
+                        <h2 style="color:rgba(0, 0, 0, 0.836);text-align:center;">Powered By:</h2>
+                        <img src="images/powered1.png">
+                        <img src="images/powered2.png">
+                        <img src="images/powered3.jpg">
+                        <img src="images/powered4.jpg">
+                        <img src="images/powered5.png">
+                        <img src="images/powered6.png">
+                        <img src="images/powered7.jpg">
+                    </div>
+                </div>
+                            
+
+        
+                <div class="cookiefooter" id="display" style="display:none;">
+                    <p>We use cookies to provide you with the best possible experience in your interactions with  Traverse. You agree to our use of cookies on your device by continuing to use our website or by clicking <button class="cookiebutton" onclick="ok()">I agree.</button></p>
+                    
+                </div>
+            </div>
+			<div id="footer">
+                <div id="footercontent">
+                    <h3 id="footer_h3"></h3>
+                    <p id="footer_p">
+                        <p>Copyright &copy; 2020 Traverse Nepal,Inc. All rights reserved.</p>
+                    <a href="info.html#privacy">Privacy Policies</a> | <span onclick="show()">Cookies Info</span> | <a href="info.html">Terms of services</a> | <a href="info.html#any">Any Qureies.</a>
+                    </p>
+                    <p>Thanks for the roll up and Get Connected with us on:</p>
+                    <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-brands.svg" alt="nopic" /></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="images/instagram-brands.svg" alt="nopic" /></a>
+                    <a href="https://www.twitter.com" target="_blank"><img src="images/twitter-square-brands.svg" alt="nopic" /></a>
+                    <a href="https://www.paypal.com" target="_blank"><img src="images/paypal-brands.svg" alt="nopic" /></a>
+                </div>
+            </div>
+</body>
+<script src="internals/mainhome.js"></script>
+<script src="internals/main.js"></script>
+</html>
